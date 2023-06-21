@@ -82,7 +82,7 @@ const handleSubmit = async (e) => {
 
 // FETCH DATA FROM SERVER
 
-    const response = await fetch('https://genie-iov1.onrender.com',{
+    const response = await fetch('http://localhost:5000',{
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
@@ -105,8 +105,6 @@ const handleSubmit = async (e) => {
         messageDiv.innerHTML="Something went wrong";
         alert(err); 
     }
-
-
 
 }
  
